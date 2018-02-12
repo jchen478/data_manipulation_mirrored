@@ -177,7 +177,7 @@ int main(){
 		// rc
 		fread(&dum, sizeof(float), 1, center_mass);
 		fwrite(&dum, sizeof(float), 1, center_massTmp);
-		printf("dum %f\n", dum); 
+		//printf("dum %f\n", dum); 
 		fread(rc, sizeof(float), nfib, center_mass);
 		fwrite(rc, sizeof(float), nfib, center_massTmp);
 		fread(rc, sizeof(float), nfib, center_mass);
