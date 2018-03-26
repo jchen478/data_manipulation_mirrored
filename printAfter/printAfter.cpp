@@ -162,7 +162,7 @@ int main(){
 	nConfig = int(strain / dt / float(config_write));
 	nContact = int(strain / dt / float(contact_write));
 	stepStress = int(start_printAfter / dt / float(stress_write)); 
-	stepConfig = int(start_printAfter / dt / float(config_write));
+	stepConfig = int(start_printAfter / dt / float(config_write)) + 2;
 	stepContact = int(start_printAfter / dt / float(contact_write));
 
 	r = (float*)malloc(nfib*nseg*sizeof(float)); 
@@ -185,7 +185,7 @@ int main(){
 			dum1, dum2, dum3, dum4, dum5, dum6, dum7);
 	}
 	// reprint configuration files
-	for (step = 0; step < nConfig + 1; step++){
+	for (step = 0; step < nConfig + 2; step++){
 		
 		// rc
 		fread(&dum, sizeof(float), 1, center_mass);
