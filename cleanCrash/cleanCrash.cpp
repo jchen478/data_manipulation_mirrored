@@ -172,7 +172,7 @@ int main(){
 			dum1, dum2, dum3, dum4, dum5, dum6, dum7);
 	}
 	// reprint configuration files
-	for (step = 0; step < nConfig + 1; step++){
+	for (step = 0; step < nConfig; step++){
 		
 		// rc
 		fread(&dum, sizeof(float), 1, center_mass);

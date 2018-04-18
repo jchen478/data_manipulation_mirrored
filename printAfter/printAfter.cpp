@@ -162,7 +162,7 @@ int main(){
 	nConfig = int(strain / dt / float(config_write));
 	nContact = int(strain / dt / float(contact_write));
 	stepStress = int(start_printAfter / dt / float(stress_write)); 
-	stepConfig = int(start_printAfter / dt / float(config_write)) + 2;
+	stepConfig = int(start_printAfter / dt / float(config_write)) + 1;
 	stepContact = int(start_printAfter / dt / float(contact_write));
 
 	r = (float*)malloc(nfib*nseg*sizeof(float)); 
